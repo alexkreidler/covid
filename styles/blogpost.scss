@@ -9,21 +9,35 @@
     }
   }
 
+  .footnotes {
+    margin: 3rem 0;
+
+    hr {
+      margin-bottom: 2rem;
+    }
+
+    .footnote-back {
+      margin-left: 0.5rem;
+    }
+  }
+
   .content {
-    line-height: 22px;
-    h2 {
-      margin: 24px 0 8px;
-      font-weight: normal;
-      line-height: 36px;
+    margin: 2em 0;
+
+    line-height: 1.4em;
+
+    * {
+      max-width: 32em;
+      width: 100%;
+    }
+    
+    h1, h2, h3 {
+      margin: 1em 0;
+      line-height: 1.5em;
     }
 
-    h3 {
-      margin: 12px 0;
-      line-height: 28px;
-    }
-
-    p {
-      margin-bottom: 10px;
+    P {
+      margin-bottom: 0.5em;
     }
 
     ul {

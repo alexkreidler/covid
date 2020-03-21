@@ -1,8 +1,8 @@
 ---
 layout: homepage.liquid
-title: Horsin' Around
+title: COVID Blog
 ---
 
-## Welcome to Hollywoo
+# COVID-19 Testing
 
-Hello. I am BoJack. Horseman, obviously
+This is a microblog documenting the past two weeks of my research on testing methods for COVID-19.

@@ -1,6 +1,6 @@
-body {
-  text-transform: lowercase;
-}
+// body {
+//   text-transform: lowercase;
+// }
 
 .category {
   margin-top: 25px;
@@ -10,7 +10,7 @@ body {
 .posts {
   list-style: none;
   .post {
-    margin-top: 8px;
+    margin: 1.5em 0;
     line-height: 14px;
     &-date {
       font-size: 12px;

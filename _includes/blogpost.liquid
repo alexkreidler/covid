@@ -6,17 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="{{ title }}" />
     <title>{{ title }}</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../../styles/common.css" />
     <link rel="stylesheet" href="../../styles/blogpost.css" />
     <link rel="stylesheet" href="../../styles/prism-theme.css"/>
   </head>
   <body>
     <div class="container post-container">
-        <h1>{{ title }}</h1>
+        {% comment %} <h1>{{ title }}</h1> {% endcomment %}
       <div class='content'>{{ content }}</div>
       <div class="back-link">
         <a href="/">← Back</a>
