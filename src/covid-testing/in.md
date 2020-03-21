@@ -6,11 +6,12 @@ author: Alex Kreidler
 # Testing Analysis and Comparison
 
 Right now, labs across the world are using a diagnostic test based on a set of
-related processes in the PCR or polymerase chain reaction family. More
-specifically, they are using the realtime RT-PCR or qRT-PCR tests, which just
-mean that firstly, the amount of the virus is measured continuously throughout
-the test (in "real-time"), and since SARS-CoV-2 is an RNA virus, RT means that
-the test simply uses the complementary DNA (cDNA) to the RNA strands.
+procedures called [polymerase chain reaction (PCR).](https://en.wikipedia.org/wiki/Polymerase_chain_reaction) This method was invented in 1985
+and won a Nobel prize. [^pcrdetails]
+
+The basic idea is to take a sample from the patient, isolate and duplicate any
+viral RNA/DNA in the sample, and then use a flourescent pigment intercalcated with the DNA
+or a pH indicator to determine the amount or at least the prescence of viral RNA.
 
 This method is slow, expensive, complex, and at least for COVID-19, there are
 concerns about it's accuracy for detecting the virus. [^fn1]
@@ -20,6 +21,12 @@ and then how an alternative method called RT-LAMP is a marked improvement in
 every one of those areas.
 
 Let's adress each of these concerns individually.
+
+[^pcrdetails]: More specifically, they are using the realtime RT-PCR or qRT-PCR tests, which just
+mean that firstly, the amount of the virus is measured continuously throughout
+the test (in "real-time"), and since SARS-CoV-2 is an RNA virus, RT means that
+the test simply uses the complementary DNA (cDNA) to the RNA strands.
+I may write a separate article outlining the types of testing methods there are in detail.
 
 [^fn1]:
 

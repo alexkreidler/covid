@@ -22,21 +22,21 @@
   }
 
   .content {
-    margin: 2em 0;
-
     line-height: 1.4em;
 
     * {
       max-width: 32em;
       width: 100%;
     }
-    
-    h1, h2, h3 {
-      margin: 1em 0;
+
+    h1,
+    h2,
+    h3 {
+      margin: 0.5em 0;
       line-height: 1.5em;
     }
 
-    P {
+    p {
       margin-bottom: 0.5em;
     }
 
