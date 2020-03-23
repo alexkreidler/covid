@@ -1,6 +1,7 @@
 ---
 title: COVID-19 Alternative Testing Analysis
 author: Alex Kreidler
+bibliography: [library.bib]
 ---
 
 # Testing Analysis and Comparison
@@ -15,16 +16,18 @@ viral RNA/DNA in the sample, and then use a fluorescent pigment intercalated
 with the DNA or a pH indicator to determine the amount of at least the presence
 of viral RNA.
 
-This method is slow, expensive, complex, and at least for COVID-19, there are
-concerns about its accuracy for detecting the virus. [^fn1]
+This method is **slow, expensive, complex**, and at least for COVID-19, there are
+concerns about its detection accuracy. [^fn1]
 
 In this article, I first describe the issues with our current testing method,
 and then how an alternative method called RT-LAMP is a marked improvement in
 every one of those areas.
 
 RT-LAMP stands for
-[reverse transcriptase loop-mediated isothermal amplification](https://en.wikipedia.org/wiki/Reverse_Transcription_Loop-mediated_Isothermal_Amplification)
-and is a variation on the LAMP technique.
+[reverse transcription loop-mediated isothermal amplification](https://en.wikipedia.org/wiki/Reverse_Transcription_Loop-mediated_Isothermal_Amplification)
+and is a variation on the LAMP technique. [^lamp] It is the most popular and widely used
+form of Isothermal Nucleic Acid Amplification Technology (iNAAT), which in general is more cost-effective
+and energy-efficient than PCR-based methods.
 
 I may write a separate article describing these and other types of testing
 methods there are. However, these are the only two molecular assays that are in
@@ -37,51 +40,58 @@ Let's address each of these concerns individually.
   More specifically, they are using the realtime RT-PCR or qRT-PCR tests, which
   just means that firstly, the amount of the virus is measured continuously
   throughout the test (in "real-time"), and since SARS-CoV-2 is an RNA virus, RT
-  means that the test simply uses the complementary DNA (cDNA) to the RNA
+  means that the test simply uses the complementary DNA (cDNA) to the RNA.
   strands.
 
 [^fn1]:
 
 This is why China had a large bump in their number of reported cases: because
 they changed the criteria to patients who had the symptoms, not just those who
-tested positive on the test. In fact, many cases will test negative multiple
+tested positive on the test. Many cases can test negative multiple
 times. See the Accuracy section.
+
+[^lamp]: @parida_loop_2008 provides a valuable description of the process, although it is out of date by now.
+Additionally, @becherer_loop-mediated_2020 provides a modern review of sequence-dependent detection
 
 ## Time
 
-In diagnostic testing for a pandemic, most experts would likely say that
+In diagnostic testing for a pandemic, most experts would likely agree that
 throughput is more important than the absolute time it takes for each test.
 However, time is still important to the patients, and in many cases a shorter
 absolute time allows for greater throughput.
 
 According to ThermoFisher, one of the leading providers of qPCR tests, the
 average running time for a PCR test is 2 hours. They also market their "Fast
-PCR" tests, which cut that down to 60 minutes. [@noauthor_benefits_nodate]
+PCR" tests, which cut that down to 60 minutes [@noauthor_benefits_nodate].
 
 The most experimental research for PCR tests by using a micro-sized version of
 the test can do 40 cycles of PCR in 6 minutes. However, this can only process
 100 nanoliters of a sample, and would require many in parallel to gain
-throughput capabilities. [@neuzil_ultra_2006]
+the requisite throughput capabilities [@neuzil_ultra_2006].
 
 LAMP tests can be completed, after the pre-processing steps, in less than 20
-seconds.
+seconds [@noauthor_lamp-covid-19_nodate].
 
 ## Cost
 
 qPCR tests require large, expensive machines called thermocyclers, along with
 reagents and other laboratory equipment necessary to extract and prepare the DNA
-or RNA carefully before the test.
+or RNA carefully before the test. 
 
 Some groups have shown that they have been able to decrease the "cost per
-reaction" of PCR tests to around a dollar. [@santos_development_2017]
+reaction" of PCR tests to around a dollar [@santos_development_2017].
 
-However, the main issue here is the initial capital outlays for buying the
+However, the main issue here is the initial capital outlays (~$2000-$4000) for buying the
 requisite equipment, which may not be a problem for existing labs in developed
-countries, but can be an issue for remote locations.
+countries, but can be an issue for remote locations. @wong_rapid_2015 and others have
+attempted to build thermocyclers specifically for remote locations.
 
-This is why LAMP tests have become popular as a more accurate form of rapid
-diagnostic tests (RDTs) for some diseases such as malaria and tuberculosis which
-are major issues in many developing countries.
+This is why LAMP tests have become popular as a point-of-care (POC) tests for some diseases
+such as malaria and tuberculosis in many developing countries. [^malaria] @tambo_loop-mediated_2018 showed that LAMP could be
+30% more sensitive than the rapid diagnostic tests (RDTs) which they had used previously.  
+
+[^malaria]: See the Background section of @vasquez_diagnostic_2018, describing many previous papers applying
+LAMP in the field.
 
 ## Complexity and use of Healthcare System Resources
 
@@ -91,41 +101,68 @@ are prepared.
 
 Firstly, the PCR process, because it can be used for more advanced procedures,
 requires careful preparation of the sample in the lab, which can lead to
-shortages of requisite reagents, as has been widely reported.
+shortages of requisite reagents, for DNA/RNA extraction, as has been widely reported.
 
 However, LAMP tests have been shown to work directly on samples with little or
-no preparation. In fact, during the Zika virus outbreak, a RT-LAMP test was
+no preparation. In fact, during the Zika virus outbreak, various LAMP tests were
 developed that could test individual dead mosquitoes by simply placing them in a
-test tube with water, and then running the test.
+test tube with water, and then running the test [@silva_loop-mediated_2020]. [^multi]
 
-For example, for COVID-19, most testing facilities use a nasopharyngeal swab
-which is uncomfortable and sometimes painful as a healthcare practitioner sticks
-a swab down one's nasal cavity, often eliciting coughs or sneezes that could
-contain the virus. This is why healthcare workers need to wear and change into
-new personal protective equipment (PPE) before every test.
+[^multi]:  For example, @yaren_point_2017 was able to build a test for 3 diseases: the Zika virus,
+Dengue virus, and the Chikungunya virus in one test (known as a **multiplexed** test) simply
+based on unprocessed urine and blood plasma from humans, and a simple treatment protocol
+for the mosquitoes. 
 
-This leads to real challenges, including the simple time added for healthcare
-workers to properly clean or change their PPE before a test, and if the supply
-chain cannot provide adequate PPE for doctors and others who need it.
+Next, let's discuss the differences between types of sampling methods for
+respiratory infections specifically.
 
-For example, healthcare workers at drive-thru testing stations using N95 masks
+For COVID-19, most testing facilities use a nasopharyngeal swab
+which is uncomfortable and sometimes painful as a healthcare practitioner inserts
+a swab into one's nasal cavity, often eliciting coughs or sneezes that could
+spread the virus. This is why healthcare personnel (HCP)[^hcw] need to change all or parts of
+their personal protective equipment (PPE) before each test [@health_personal_2020].
+
+[^hcw]: Also sometimes referred to in literature as healthcare worker (HCW).
+
+This leads to real challenges, including the *time added* for healthcare personnel
+to properly clean or change their PPE before a test.
+
+It also poses a risk to the workers and the patients if they are
+either reusing PPE or using substandard equipment (like a bandana for a face mask)
+if the supply chain cannot provide adequate PPE due to the surging demand from doctors
+and others who need it [@cnn_used_nodate; @cdc_strategies_2020].
+
+Additionally, HPC at drive-thru testing stations or in a clinic performing sample collection using N95 masks
 may be preventing a doctor in a hospital from caring for a critical-condition
 patient because of a lack of masks.
 
 LAMP may allow for alleviating this problem by allowing for patient-collected
-samples.
+samples in a patient's own home.
 
-Studies have given mixed signals about the effectiveness of patient-collected
-samples and there are concerns about their uniformity. However, for most
-respiratory diseases, all indications suggest that patient-collected samples
+Studies have given somewhat mixed signals about the effectiveness of patient-collected
+samples in general. For respiratory diseases in particular, self-collection shows a lot of promise.
+
+However, for most respiratory diseases, all indications suggest that patient-collected samples
 using saliva or a nasal swab (which is much easier and less uncomfortable) is
-just as accurate as nasopharyngeal swabs.
+just as accurate as nasopharyngeal swabs [@dhiman_effectiveness_2012].
+
+Some other methods, like self-collection of throat swabs such as in @fisher_evaluating_2019,
+have shown not to add significantly to the sensitivity of detection. 
+
+For the SARS-Cov-2 virus specifically, preliminary research from @wang_detection_2020
+has shown that the presence of the virus can be detected in many different type of samples.
+
+Since this group analyzed data from patients at varying severity levels and with different viral loads, and since
+they did not have access to medical data to correlate as such, there are no real conclusions we can draw about
+the sensitivity, especially since they only collected samples from 8 patients for nasal swabs.
+
+Further research is required in this area.
 
 <!-- However, there have been no really large scale studies, mainly because we've never seen a pandemic this big before.
  -->
 
-Additionally, the tests themselves generally have to be performed by highly
-trained workers.
+Additionally, the tests themselves generally have to be performed by trained workers,
+and some tests that include viral isolation must be run in a biocontainment facility.
 
 ## Accuracy
 
@@ -137,22 +174,21 @@ However, during the outbreak of this Sars-Cov-2 virus, there have been concerns
 about the accuracy of the specific test for COVID.
 
 Firstly, studies have shown that asymptomatic cases and even symptomatic ones
-may test negative multiple times, but still be clinically diagnosed with
-COVID-19 for other reasons (blood tests, CT scans, etc). [@hu_clinical_2020]
+may test negative multiple times and still be clinically diagnosed with
+COVID-19 based on other methods like blood tests or CT scans [@hu_clinical_2020].
 
 Additionally, even in symptomatic and severe cases, only 59% of suspected COVID
 cases were detected via PCR tests, and up to 33% of negative PCR tests were
 clinically diagnosed as having COVID. Thus, CT scans are recommended for more
-comprehensive diagnosis in endemic areas. [@ai_correlation_2020]
+comprehensive diagnosis in endemic areas [@ai_correlation_2020].
 
 Thus, there are concerns about the accuracy of PCR tests for COVID. More
-retrospective analysis of procedures, sample, etc will be required to determine
+retrospective analysis of procedures, samples, etc will be required to determine
 the issues with this test.
 
-Based on published papers, RT-LAMP is at least as accurate, if not more accurate
-than PCR for COVID testing.
-
-Again, further analysis is needed to figure out possible reasons for this.
+Based on the **existing published papers using RT-LAMP for diagnosing COVID-19**,
+LAMP is at least as accurate, if not more accurate
+than PCR [@zhang_rapid_2020; @lamb_rapid_2020; @yu_rapid_2020; @el-tholoth_single_2020].
 
 So far, this article seems rather one-sided by presenting issues which are
 important, and I have tried to discuss objectively, but seem to favor LAMP.
@@ -165,7 +201,7 @@ PCR is generally more amenable to complex experiments and new research that
 require exact control over DNA.
 
 It can be used for complex biological procedures such as "genotyping, cloning,
-mutation detection, sequencing, microarrays, forensics, and paternity testing."
+mutation detection, sequencing, microarrays, forensics, and paternity testing" [@noauthor_pcr_nodate].
 
 However, for simple diagnostic testing, where the goal is to detect whether or
 not the pathogen exists[^dets], it seems that using the best tool for the job,
@@ -180,7 +216,7 @@ through conventional labs, makes the most sense.
   (doesn't detect similar viruses like SARS, MERS H1N1, etc). Additionally, the
   test should have a high **sensitivity** and **low level of detection** (e.g.
   it can detect the virus if only 10 genome equivalent copies of RNA are present
-  in a sample)
+  in a sample).
 
 ## Conclusion
 
@@ -217,7 +253,7 @@ sampling tools in the mail and perform their own test.
 One method is to send the entire testing apparatus to the patient. There has
 been some research on 3D-printed testing devices, and even a test that runs in a
 thermos, because LAMP requires the test tube to be heated to 60-65 degrees
-centigrade or 140-149 degrees F.
+centigrade or 140-149° F [@kadimisetty_fully_2018; @liao_smart_2016].
 
 This would allow them to run the test for themselves as soon as they receive the
 device, delivering results within 30 minutes. However, the issue of heating the
@@ -242,7 +278,7 @@ The tests and testing procedures would have to receive and Emergency Use
 Authorization (EUA) from the FDA.
 
 All laboratories processing human samples are required to follow the federal
-Clinical Laboratory Improvement Amendments (CLIA) statute.
+Clinical Laboratory Improvement Amendments (CLIA) statute [@noauthor_clinical_nodate].
 
 However, for simple tests[^tests] that use unprocessed specimens (like saliva or
 nasal swabs) and pose no risk to the patient, one can apply for a CLIA waiver,
@@ -267,29 +303,81 @@ However, I believe that the government could successfully figure out how to get
 the requisite materials, as they are generally less per sample than PCR tests.
 
 This is an area where I have little knowledge, and so I would love feedback and
-help with this. If anyone could read the four existing papers on RT-LAMP and has
-experience with lab supply chains, it would be great to reach out.
+help with this. If anyone with experience in laboratory supply chains would like to help,
+it would be much appreciated. 
 
-### At a national scale
+They could read the four existing papers on RT-LAMP for COVID-19,
+cited in the [Accuracy section](#accuracy) above and reach out to provide details on the potential availability
+or ways to substitute or mass-produce the reagents and equipment required. 
 
-It has been discussed that the lack of tests early in the process in the US was
-a "failing." The media has drawn comparisons to South Korea, which performed
+## Discussion of Testing at a National Scale
+
+Early on, Anthony Fauci, director of the National Institute of Allergy and Infectious Diseases,
+characterized the lack of testing in the US as "a failing," and since then, the media has tried
+to parse and understand why that happened [@chuck_it_2020]. However, based on what I've observed,
+even though there were errors with the original tests, it is mainly, as Dr. Fauci also described,
+because "we're not set up for" getting tests easily to people, a.k.a deploying testing on a large
+scale as described above.
+
+He described how our healthcare system is optimized for a patient to doctor
+relationship and that all systems for testing are based on that system, where then a doctor
+would determine that a patient meets the criteria for a test, and then take the sample at
+that location and either
+
+1. Run the test in their own hospital system
+2. Send it to a state lab or the CDC lab
+3. Send it to a commercial lab company like LabCorp or Quest etc.
+
+However, each of these locations is limited by throughput and has a limited ability to scale [@covid-19_test_capacity_tracker_covid-19_2020].
+Although there were regulatory hurdles early in the process that limited these as some options,
+I believe the main issue still is throughput.
+
+Obviously this poses challenges for people without insurance or with inadequate insurance, or people
+who don't have a regular doctor to go to.
+
+This is an issue that has been discussed at WH Coronavirus Task Force briefings,
+and they have made a point to mention the addition of community testing facilities
+and drive-through facilities, which still usually have strict requirements.
+
+The media has drawn comparisons to South Korea, which performed
 extensive testing and was thus able to better control the virus by using
 isolation rather than quarantines, and Italy, which in general didn't do as
-much.
+much [@noauthor_special_2020].
 
 However, there are reports of one town in Italy that tested all of its citizens,
 isolating the positive cases and then retesting periodically. The virus in that
-town ran its course and died out.
+town ran its course and died out [@tondo_scientists_2020].
 
-Another possibility is to test as many people as possible in the United States.
-One idea for encouraging this is to tie the cash check that seems to be a part
-of the proposed economic stimulus package to completing a self-test. This would
+If we wanted to test as many people as possible in the United States we could
+tie the cash check that seems to be a part
+of the proposed economic stimulus package to completing a test. This would
 then ensure with multiple rounds of data whether or not every American has the
 virus.
 
+However, at this point in the trajectory of the virus in the United States, it seems that
+the level of testing that we need is too little and too late.
+
+Many experts agree that during the brunt of the pandemic, it is simply infeasible to test
+everyone that we want to, and even if we could, we wouldn't want to. @frieden_former_2020 provides an
+important outline of how responses to a pandemic must adapt at different stages.
+
+At a certain point, if the virus has infected a critical mass such that it can't be contained
+by traditional surveillance measures, then social distancing must go into effect, meaning
+that testing doesn't result in a different outcome for many people, as they are
+already under quarantine or stay-at-home orders.
+
+This is why in recent days we have seen states provide new guidance to prioritize
+the allocation of testing to only certain people [@johnson_hard-hit_2020].
+
+In retrospective, now understanding the economic fallout of the pandemic,
+it would have been worth it to spend even tens of billions of dollars weeks earlier if
+we could have a South-Korea style situation where we did quick and effective testing
+and contact tracing, allowing for isolation instead of larger-scale quarantines.
+
 Of course, explaining the possibility that the tests aren't completely accurate
-is important as well.
+to people is important as well. Otherwise, people who receive a false negative result
+might return to work or social gatherings even if they are exhibiting symptoms or
+are at high epidemiological risk.
 
 ## Why aren't we doing this?
 
@@ -298,8 +386,8 @@ have concluded this research is: Why does our developed health-care system feel
 the need to stick with this type of test when there is a better option out
 there?
 
-This is the question I posed to David Walt and Pardis Sabeti of Harvard and the
-Greater Boston Consortium on Pathogen Readiness.
+This is the question I posed to David Walt and Pardis Sabeti, the two leaders of the [Diagnostics
+Working Group at the Greater Boston Consortium on Pathogen Readiness](https://gbcpr.hms.harvard.edu/diagnostics).
 
 Dr. Walt's response was:
 
@@ -326,7 +414,7 @@ Additionally, I hope you share this article, or other resources describing new
 testing methods, with friends, family, and colleagues.
 
 The Foundation for Innovative New Diagnostics has a list of all diagnostic tests
-for COVID-19: https://www.finddx.org/covid-19/pipeline/
+for COVID-19: <https://www.finddx.org/covid-19/pipeline/>
 
 This list includes companies and groups working on a variety of tests.
 
