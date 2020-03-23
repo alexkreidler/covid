@@ -2,6 +2,8 @@
 title: COVID-19 Alternative Testing Analysis
 author: Alex Kreidler
 bibliography: [library.bib]
+# link-citations: true
+suppress-bibliography: true
 ---
 
 # Testing Analysis and Comparison
@@ -105,8 +107,8 @@ shortages of requisite reagents, for DNA/RNA extraction, as has been widely repo
 
 However, LAMP tests have been shown to work directly on samples with little or
 no preparation. In fact, during the Zika virus outbreak, various LAMP tests were
-developed that could test individual dead mosquitoes by simply placing them in a
-test tube with water, and then running the test [@silva_loop-mediated_2020]. [^multi]
+developed [@silva_loop-mediated_2020] that could test individual dead mosquitoes by simply placing them in a
+test tube with water, and then running the test. [^multi]
 
 [^multi]:  For example, @yaren_point_2017 was able to build a test for 3 diseases: the Zika virus,
 Dengue virus, and the Chikungunya virus in one test (known as a **multiplexed** test) simply
@@ -418,4 +420,4 @@ for COVID-19: <https://www.finddx.org/covid-19/pipeline/>
 
 This list includes companies and groups working on a variety of tests.
 
-# Works Cited
+<!-- # Works Cited -->
