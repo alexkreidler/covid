@@ -12,7 +12,9 @@
   </head>
   <body>
     <div class="container">
-      {{ content }}
+      <div class="main">
+        {{ content }}
+      </div>
       <h3 class="category">Posts</h3>
       <ul class="posts">
       {% for post in collections.posts reversed %}
