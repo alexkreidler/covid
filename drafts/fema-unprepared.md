@@ -11,7 +11,7 @@ Companies and governments use logistics software to plan how to move inventory a
 
 An entire industry has developed software that has pretty much perfected how to find the cheapest route from one warehouse to another, with minimal overhead. With the flexibility of the software and the goal of constantly decreasing costs, many industries have moved to just-in-time supply chains, to [minimize capital tied up in materials, inventory, and storage costs](https://www.ups-scs.com/solutions/white_papers/wp_JIT.pdf).
 
-In the context of emegencies, however, supply chain management becomes a much a trickier issue. Just knowing the source and destination becomes much more difficult.
+In the context of emergencies, however, supply chain management becomes a much a trickier issue. Just knowing the source and destination becomes much more difficult.
 
 Depending on the situation this could involve:
 
@@ -23,7 +23,7 @@ Depending on the situation this could involve:
     - Need for ramping up commercial production - only in a drawn-out disaster
 - Destination
   - Natural Disasters, Terrorism - usually short timespan, isolated locations that need supplies
-  - Cyberattack, Bioterrorism, Pandemic - potential for widespread damage, emergency resources needed in wide variety of areas
+  - Cyberattacks, Bioterrorism, Pandemic - potential for widespread damage, emergency resources needed in a wide variety of areas
 
 It seems evident that an **emergency** supply chain management system must then have a much wider set of features and capabilities, and additionally that it should interface with a much wider group of individuals, corporations, and governments to provide up to date data on both the sources and destinations of emergency supplies.
 
