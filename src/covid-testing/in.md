@@ -3,8 +3,19 @@ title: COVID-19 Alternative Testing Analysis
 author: Alex Kreidler
 bibliography: [library.bib]
 # link-citations: true
-suppress-bibliography: true
+# suppress-bibliography: true
 ---
+
+# Introduction
+
+The COVID-19 pandemic is likely the single greatest threat to public health we have ever seen.
+
+Although many countries have taken aggressive and sufficient steps to control the outbreak,
+other countries, including the U.S. and Italy, have fallen behind.
+
+In this paper, we compare the most widely used existing testing methods to newer
+state of the art methods that have massive potential for better scalability and throughput,
+in both developed and developing countries.
 
 # Testing Analysis and Comparison
 
@@ -31,19 +42,19 @@ and is a variation on the LAMP technique. [^lamp] It is the most popular and wid
 form of Isothermal Nucleic Acid Amplification Technology (iNAAT), which in general is more cost-effective
 and energy-efficient than PCR-based methods.
 
-I may write a separate article describing these and other types of testing
+<!-- I may write a separate article describing these and other types of testing
 methods there are. However, these are the only two molecular assays that are in
-real use for testing COVID-19.
+real use for testing COVID-19. -->
 
 Let's address each of these concerns individually.
 
 [^pcrdetails]:
 
-  More specifically, they are using the realtime RT-PCR or qRT-PCR tests, which
-  just means that firstly, the amount of the virus is measured continuously
-  throughout the test (in "real-time"), and since SARS-CoV-2 is an RNA virus, RT
-  means that the test simply uses the complementary DNA (cDNA) to the RNA.
-  strands.
+More specifically, they are using the realtime RT-PCR or qRT-PCR tests, which
+just means that firstly, the amount of the virus is measured continuously
+throughout the test (in "real-time"), and since SARS-CoV-2 is an RNA virus, RT
+means that the test simply uses the complementary DNA (cDNA) to the RNA.
+strands.
 
 [^fn1]:
 
@@ -52,7 +63,9 @@ they changed the criteria to patients who had the symptoms, not just those who
 tested positive on the test. Many cases can test negative multiple
 times. See the Accuracy section.
 
-[^lamp]: @parida_loop_2008 provides a valuable description of the process, although it is out of date by now.
+[^lamp]:
+
+@parida_loop_2008 provides a valuable description of the process, although it is out of date by now.
 Additionally, @becherer_loop-mediated_2020 provides a modern review of sequence-dependent detection
 
 ## Time
@@ -78,7 +91,7 @@ seconds [@noauthor_lamp-covid-19_nodate].
 
 qPCR tests require large, expensive machines called thermocyclers, along with
 reagents and other laboratory equipment necessary to extract and prepare the DNA
-or RNA carefully before the test. 
+or RNA carefully before the test.
 
 Some groups have shown that they have been able to decrease the "cost per
 reaction" of PCR tests to around a dollar [@santos_development_2017].
@@ -90,9 +103,11 @@ attempted to build thermocyclers specifically for remote locations.
 
 This is why LAMP tests have become popular as a point-of-care (POC) tests for some diseases
 such as malaria and tuberculosis in many developing countries. [^malaria] @tambo_loop-mediated_2018 showed that LAMP could be
-30% more sensitive than the rapid diagnostic tests (RDTs) which they had used previously.  
+30% more sensitive than the rapid diagnostic tests (RDTs) which they had used previously.
 
-[^malaria]: See the Background section of @vasquez_diagnostic_2018, describing many previous papers applying
+[^malaria]:
+
+See the Background section of @vasquez_diagnostic_2018, describing many previous papers applying
 LAMP in the field.
 
 ## Complexity and use of Healthcare System Resources
@@ -110,10 +125,12 @@ no preparation. In fact, during the Zika virus outbreak, various LAMP tests were
 developed [@silva_loop-mediated_2020] that could test individual dead mosquitoes by simply placing them in a
 test tube with water, and then running the test. [^multi]
 
-[^multi]:  For example, @yaren_point_2017 was able to build a test for 3 diseases: the Zika virus,
+[^multi]:
+
+For example, @yaren_point_2017 was able to build a test for 3 diseases: the Zika virus,
 Dengue virus, and the Chikungunya virus in one test (known as a **multiplexed** test) simply
 based on unprocessed urine and blood plasma from humans, and a simple treatment protocol
-for the mosquitoes. 
+for the mosquitoes.
 
 Next, let's discuss the differences between types of sampling methods for
 respiratory infections specifically.
@@ -126,7 +143,7 @@ their personal protective equipment (PPE) before each test [@health_personal_202
 
 [^hcw]: Also sometimes referred to in literature as healthcare worker (HCW).
 
-This leads to real challenges, including the *time added* for healthcare personnel
+This leads to real challenges, including the _time added_ for healthcare personnel
 to properly clean or change their PPE before a test.
 
 It also poses a risk to the workers and the patients if they are
@@ -149,7 +166,7 @@ using saliva or a nasal swab (which is much easier and less uncomfortable) is
 just as accurate as nasopharyngeal swabs [@dhiman_effectiveness_2012].
 
 Some other methods, like self-collection of throat swabs such as in @fisher_evaluating_2019,
-have shown not to add significantly to the sensitivity of detection. 
+have shown not to add significantly to the sensitivity of detection.
 
 For the SARS-Cov-2 virus specifically, preliminary research from @wang_detection_2020
 has shown that the presence of the virus can be detected in many different type of samples.
@@ -212,13 +229,13 @@ through conventional labs, makes the most sense.
 
 [^dets]:
 
-  This process consists of amplifying the RNA (in this case) such that it can be
-  detected by a fluorescent gel or a change in pH, but with some constraints.
-  For example, such that the test is **specific** and not **cross-reactive**
-  (doesn't detect similar viruses like SARS, MERS H1N1, etc). Additionally, the
-  test should have a high **sensitivity** and **low level of detection** (e.g.
-  it can detect the virus if only 10 genome equivalent copies of RNA are present
-  in a sample).
+This process consists of amplifying the RNA (in this case) such that it can be
+detected by a fluorescent gel or a change in pH, but with some constraints.
+For example, such that the test is **specific** and not **cross-reactive**
+(doesn't detect similar viruses like SARS, MERS H1N1, etc). Additionally, the
+test should have a high **sensitivity** and **low level of detection** (e.g.
+it can detect the virus if only 10 genome equivalent copies of RNA are present
+in a sample).
 
 ## Conclusion
 
@@ -306,11 +323,11 @@ the requisite materials, as they are generally less per sample than PCR tests.
 
 This is an area where I have little knowledge, and so I would love feedback and
 help with this. If anyone with experience in laboratory supply chains would like to help,
-it would be much appreciated. 
+it would be much appreciated.
 
 They could read the four existing papers on RT-LAMP for COVID-19,
 cited in the [Accuracy section](#accuracy) above and reach out to provide details on the potential availability
-or ways to substitute or mass-produce the reagents and equipment required. 
+or ways to substitute or mass-produce the reagents and equipment required.
 
 ## Discussion of Testing at a National Scale
 
@@ -415,9 +432,11 @@ them about deploying new testing methods.
 Additionally, I hope you share this article, or other resources describing new
 testing methods, with friends, family, and colleagues.
 
+## Further resources
+
+This article, along with my other research on COVID-19, is available at <https://covidtesting.alexkreidler.com/>
+
 The Foundation for Innovative New Diagnostics has a list of all diagnostic tests
 for COVID-19: <https://www.finddx.org/covid-19/pipeline/>
 
 This list includes companies and groups working on a variety of tests.
-
-<!-- # Works Cited -->
