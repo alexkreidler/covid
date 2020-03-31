@@ -2,6 +2,8 @@
 title: "We're doing COVID testing wrong"
 author: Alex Kreidler
 bibliography: [library.bib]
+date: 2020-03-23
+# date: Created
 ---
 
 # We're doing COVID testing wrong

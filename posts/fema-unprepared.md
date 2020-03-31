@@ -5,7 +5,7 @@ author: Alex Kreidler
 
 # FEMA was woefully unprepared for this pandemic
 
-## It's software and development process has been a consistent failure for more than 18 years.
+## It's flagship software system and entire IT development ecosystem has been a consistent failure for more than 18 years.
 
 Companies and governments use logistics software to plan how to move inventory and important supplies from one point to another. Usually, knowing the source and destination of your goods is simple enough.
 
@@ -50,7 +50,7 @@ Some other takeaways were:
   * a backup plan in case the system itself failed or went offline
 * The system was repeatedly
   * Over budget
-  * Not fully operational by the required deadline
+  * Not fully operational by their estimated timeframes/deadlines
 * Since its inception in 2005, it was mainly developed by 1 Federal Program Manager and the rest solely by federal contractors, until mid-2012  
 * FEMA did not do any testing on the system
 * They didn't publish any procedures or documents on how to use the system
@@ -66,43 +66,17 @@ the public and companies to donate ventilators and such at predetermined
 locations, which would then be transported to their allocated location by FEMA's
 transportation network.
 
-## Our role
+## The role of the open source community
 
-Obviously this is not the case, thus giving the open source community to fill
-this need by providing a community-based system for identifying sources of
-ventilators, along with exact requirements/estimates for individual hospitals
-and clinics.
+There are several open source projects in the tech community trying to assist with the pandemic response.
 
-However I would be wary about trying to build our own system to deal with the
-actual logistics in between the source and the destination. There is already an
-entire industry of for-profit logistics software companies, and several open
-source options:
-https://www.goodfirms.co/blog/the-top-9-free-and-open-source-freight-software
-https://opensource.com/tools/supply-chain-management
+Many of them are trying to provide logistics-like support, such as helping hospitals by providing community donations, etc.
 
-In fact some of these solutions might even work for some of the use-cases we
-need here, but I think by narrowing our scope only to the source and
-destination, we can offer one thing: simplicity and thus speed. Quickly
-validating hospitals and receiving the data on their emergency needs, along with
-finding the companies and people who can provide ventilators.
+One of them is the [OpenVentilatorRegistry](https://github.com/openventilatorregistry/OpenVentilatorRegistry) project.
 
-Some other reasons not to handle the logistics in between:
+I wrote a bit about how to position OSS projects in this space in [this issue](https://github.com/openventilatorregistry/OpenVentilatorRegistry/issues/44#issuecomment-603531838). 
 
-There's also the whole issue of bidding between different companies (both on the
-price of ventilators themselves, and shipping costs), and any regulations
-covering the shipment of medical devices.
+## Next steps
 
-By many indications, the federal government will not be dealing with either
-sourcing or allocation of ventilators, even after serious pressure from
-governors complaining about "competing with other states" (e.g. Andrew Cuomo).
-
-I also believe it would be irresponsible for us to make any decisions regarding
-allocation of resources, or to enable a system that would create such
-competition for the benefit of some companies and at the expense of taxpayers.
-
-However, simply listing sources and destinations would then allow companies to
-proactively reach out to destinations they see the need for, and the inverse as
-well. Some companies could handle the logistics on their own (such as
-[Tesla airshipping ventilators from China to LA](https://www.usatoday.com/story/money/cars/2020/03/24/elon-musk-ventilators-tesla-coronavirus-covid-19-spacex/2905980001/)),
-and some states would handle the logistics on behalf of the hospitals (e.g.
-[New York](https://www1.nyc.gov/site/em/about/divisions-units.page))
+I've issued several [Freedom of Information Act](foia.gov) requests to FEMA regarding
+the LSCMS system, and I hope to publish more when I get that information. Stay tuned!
