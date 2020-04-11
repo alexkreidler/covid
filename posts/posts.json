@@ -1,4 +1,7 @@
 {
     "layout": "blogpost.liquid",
-    "tags" : ["posts"]
+    "tags" : ["posts"],
+    "permalink": "{{ page.date | date: '%Y/%m' }}/{{ page.fileSlug }}.html",
+    "changefreq": "weekly",
+    "priority": "0.8"
 }

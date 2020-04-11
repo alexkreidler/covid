@@ -1,5 +1,6 @@
 ---
 permalink: 404.html
+sitemapIgnore: true
 ---
 
 <!DOCTYPE html>
@@ -13,14 +14,18 @@ permalink: 404.html
       href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/404.css" />
   </head>
   <body>
     <div class="container">
-      <img src="https://http.cat/404.jpg" class="not-found" />
-      <div class="back-link">
-        Go <a href="/">Home</a>
+      <!-- <img src="https://http.cat/404.jpg" class="not-found" /> -->
+      <div class="main">
+        <h1>Page not found</h1>
+        <h3>We can't find what you're looking for</h3>
+        <p>HTTP 404</p>
       </div>
+      <div class="back-link">Go <a href="/">Home</a></div>
     </div>
   </body>
 </html>

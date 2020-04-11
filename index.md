@@ -1,6 +1,8 @@
 ---
 layout: homepage.liquid
 title: COVID Blog
+changefreq: daily
+priority: "1.0"
 ---
 
 # COVID-19 Blog

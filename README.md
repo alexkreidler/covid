@@ -1,3 +1,6 @@
+---
+sitemapIgnore: true
+---
 
 # COVID-19 Blog
 

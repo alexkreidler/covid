@@ -1,0 +1,18 @@
+---
+permalink: /sitemap.xml
+domain: covidtesting.alexkreidler.com
+sitemapIgnore: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for item in collections.all %}
+{%- unless item.data.sitemapIgnore == true %}
+  <url>
+    <loc>https://{{domain}}{{ item.url }}</loc>
+    <lastmod>{{ item.date | date: '%Y-%m-%d' }}</lastmod>
+    <changefreq>{{ item.data.changefreq }}</changefreq>
+    <priority>{{ item.data.priority }}</priority>
+  </url>
+{%- endunless %}
+{%- endfor %}
+</urlset>
