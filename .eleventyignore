@@ -1,0 +1,6 @@
+# input files for pandoc
+src/
+
+# other
+README.md
+csls/
