@@ -22,6 +22,14 @@ for folder in $(ls src); do
     cat src/$folder/in.md > src/$folder/tmp.md
     echo >> src/$folder/tmp.md
     echo "# Works Cited" >> src/$folder/tmp.md
-    pandoc src/$folder/tmp.md --toc -s --filter pandoc-citeproc --csl $mla_csl --bibliography src/$folder/library.bib -o resources/$folder.pdf --metadata=link-citations:true
+    pandoc src/$folder/tmp.md --toc -s --filter pandoc-citeproc --csl $mla_csl --bibliography src/$folder/library.bib -o resources/$folder.pdf --metadata=link-citations:true --variable urlcolor=Maroon
+    rm src/$folder/tmp.md
+    
+    echo "Generating Word Doc"
+    # Generate Word version
+    cat src/$folder/in.md > src/$folder/tmp.md
+    echo >> src/$folder/tmp.md
+    echo "# Works Cited" >> src/$folder/tmp.md
+    pandoc src/$folder/tmp.md -s --filter pandoc-citeproc --csl $mla_csl --bibliography src/$folder/library.bib -o resources/$folder.docx --metadata=link-citations:true
     rm src/$folder/tmp.md
 done

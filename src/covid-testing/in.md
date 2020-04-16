@@ -151,7 +151,7 @@ either reusing PPE or using substandard equipment (like a bandana for a face mas
 if the supply chain cannot provide adequate PPE due to the surging demand from doctors
 and others who need it [@cnn_used_nodate; @cdc_strategies_2020].
 
-Additionally, HPC at drive-thru testing stations or in a clinic performing sample collection using N95 masks
+Additionally, HCP at drive-thru testing stations or in a clinic performing sample collection using N95 masks
 may be preventing a doctor in a hospital from caring for a critical-condition
 patient because of a lack of masks.
 
@@ -388,15 +388,20 @@ already under quarantine or stay-at-home orders.
 This is why in recent days we have seen states provide new guidance to prioritize
 the allocation of testing to only certain people [@johnson_hard-hit_2020].
 
-In retrospective, now understanding the economic fallout of the pandemic,
-it would have been worth it to spend even tens of billions of dollars weeks earlier if
-we could have a South-Korea style situation where we did quick and effective testing
+In retrospect, now that we understand the economic fallout of the pandemic better each passing day,
+it seems clear that it would have been worthwhile to spend even tens of billions of dollars weeks earlier if
+it enabled a South-Korea style situation with quick and effective testing
 and contact tracing, allowing for isolation instead of larger-scale quarantines.
+
+This might have allowed us to avoid the type of massive shutdowns that experts agree are
+necessary for public safety when testing capacity is inadequate but are harmful to the economy.
 
 Of course, explaining the possibility that the tests aren't completely accurate
 to people is important as well. Otherwise, people who receive a false negative result
 might return to work or social gatherings even if they are exhibiting symptoms or
 are at high epidemiological risk.
+
+Unfortunately, even weeks later, we still know that we are not testing enough [@goodnough_testing_2020; @rosenthal_opinion_2020].
 
 ## Why aren't we doing this?
 
@@ -424,9 +429,9 @@ The truth is that some companies (about 4 startups) are selling at-home tests,
 however, they are likely not RT-LAMP tests which I believe could be scaled up
 much more.
 
-## Call to action: What can you do?
+## What can you do?
 
-I urge you to contact your representatives at all levels of government to ask
+I urge you to [contact your representatives](https://www.usa.gov/elected-officials) at all levels of government to ask
 them about deploying new testing methods.
 
 Additionally, I hope you share this article, or other resources describing new
