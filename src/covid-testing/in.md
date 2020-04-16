@@ -376,8 +376,8 @@ However, at this point in the trajectory of the virus in the United States, it s
 the level of testing that we need is too little and too late.
 
 Many experts agree that during the brunt of the pandemic, it is simply infeasible to test
-everyone that we want to, and even if we could, we wouldn't want to. @frieden_former_2020 provides an
-important outline of how responses to a pandemic must adapt at different stages.
+everyone that we want to, and even if we could, we wouldn't want to. @frieden_former_2020, former director of the
+CDC, provides an important outline of how responses to a pandemic must adapt at different stages.
 
 At a certain point, if the virus has infected a critical mass such that it can't be contained
 by traditional surveillance measures, then social distancing must go into effect, meaning
