@@ -13,7 +13,7 @@ Although many countries have taken aggressive and sufficient steps to control th
 other countries, including the U.S. and Italy, have fallen behind.
 
 In this paper, we compare the most widely used existing testing methods to newer
-state of the art methods that have massive potential for better scalability and throughput,
+state-of-the-art methods that have massive potential for better scalability and throughput,
 in both developed and developing countries.
 
 # Testing Analysis and Comparison
@@ -80,7 +80,7 @@ PCR" tests, which cut that down to 60 minutes [@noauthor_benefits_nodate].
 
 The most experimental research for PCR tests by using a micro-sized version of
 the test can do 40 cycles of PCR in 6 minutes. However, this can only process
-100 nanoliters of a sample, and would require many in parallel to gain
+100 nanoliters of a sample and would require many in parallel to gain
 the requisite throughput capabilities [@neuzil_ultra_2006].
 
 LAMP tests can be completed, after the pre-processing steps, in less than 20
@@ -168,7 +168,7 @@ Some other methods, like self-collection of throat swabs such as in @fisher_eval
 have shown not to add significantly to the sensitivity of detection.
 
 For the SARS-Cov-2 virus specifically, preliminary research from @wang_detection_2020
-has shown that the presence of the virus can be detected in many different type of samples.
+has shown that the presence of the virus can be detected in many different types of samples.
 
 Since this group analyzed data from patients at varying severity levels and with different viral loads, and since
 they did not have access to medical data to correlate as such, there are no real conclusions we can draw about
@@ -208,8 +208,8 @@ Based on the existing published papers using RT-LAMP for diagnosing COVID-19,
 LAMP is at least as accurate, if not more accurate
 than PCR [@zhang_rapid_2020; @lamb_rapid_2020; @yu_rapid_2020; @el-tholoth_single_2020].
 
-So far, this article seems rather one-sided by presenting issues which are
-important, and I have tried to discuss objectively, but seem to favor LAMP.
+So far, this article seems rather one-sided by presenting important issues that
+I have tried to discuss objectively, but nevertheless seem to favor LAMP.
 
 ## So: Are there benefits to PCR?
 
@@ -292,7 +292,7 @@ and safety and are not in a high-risk group.
 
 ### Regulatory issues
 
-The tests and testing procedures would have to receive and Emergency Use
+The tests and testing procedures would have to receive an Emergency Use
 Authorization (EUA) from the FDA.
 
 All laboratories processing human samples are required to follow the federal
@@ -342,7 +342,7 @@ relationship and that all systems for testing are based on that system, where th
 would determine that a patient meets the criteria for a test, and then take the sample at
 that location and either
 
-1. Run the test in their own hospital system
+1. Run the test in their hospital system
 2. Send it to a state lab or the CDC lab
 3. Send it to a commercial lab company like LabCorp or Quest etc.
 
@@ -350,7 +350,7 @@ However, each of these locations is limited by throughput and has a limited abil
 Although there were regulatory hurdles early in the process that limited these as some options,
 I believe the main issue still is throughput.
 
-Obviously this poses challenges for people without insurance or with inadequate insurance, or people
+This poses challenges for people without insurance or with inadequate insurance, or people
 who don't have a regular doctor to go to.
 
 This is an issue that has been discussed at WH Coronavirus Task Force briefings,
