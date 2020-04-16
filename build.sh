@@ -22,7 +22,10 @@ for folder in $(ls src); do
     cat src/$folder/in.md > src/$folder/tmp.md
     echo >> src/$folder/tmp.md
     echo "# Works Cited" >> src/$folder/tmp.md
-    pandoc src/$folder/tmp.md --toc -s --filter pandoc-citeproc --csl $mla_csl --bibliography src/$folder/library.bib -o resources/$folder.pdf --metadata=link-citations:true --variable urlcolor=Maroon
+
+    # TODO: fix link-citations for PDF. Works for HTML, should for both
+    # --metadata link-citations=true
+    pandoc src/$folder/tmp.md --toc --filter pandoc-citeproc --csl $mla_csl --bibliography src/$folder/library.bib -V colorlinks=true -V urlcolor=Maroon -o resources/$folder.pdf
     rm src/$folder/tmp.md
     
     echo "Generating Word Doc"

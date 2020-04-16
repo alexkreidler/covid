@@ -1,9 +1,8 @@
 ---
 title: COVID-19 Alternative Testing Analysis
 author: Alex Kreidler
-bibliography: [library.bib]
+# bibliography: library.bib
 # link-citations: true
-# suppress-bibliography: true
 ---
 
 # Introduction
@@ -205,7 +204,7 @@ Thus, there are concerns about the accuracy of PCR tests for COVID. More
 retrospective analysis of procedures, samples, etc will be required to determine
 the issues with this test.
 
-Based on the **existing published papers using RT-LAMP for diagnosing COVID-19**,
+Based on the existing published papers using RT-LAMP for diagnosing COVID-19,
 LAMP is at least as accurate, if not more accurate
 than PCR [@zhang_rapid_2020; @lamb_rapid_2020; @yu_rapid_2020; @el-tholoth_single_2020].
 
